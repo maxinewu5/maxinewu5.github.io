@@ -1,0 +1,11 @@
+body {
+    padding: 5%;
+    font-family: "Lucida Console", monospace;
+}
+h1, h2 {
+    text-align: center;
+}
+#content {
+    margin-left: 20%;
+    margin-right: 20%;
+}
