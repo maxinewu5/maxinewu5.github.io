@@ -17,8 +17,16 @@ nav {
 }
 
 nav ul {
+    /* border: 1px solid blue; */
     list-style-type: none;
     display: flex;
+}
+nav p {
+    font-weight: bold;
+}
+nav p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 nav li {
@@ -40,8 +48,9 @@ nav a:visited {
 
 #hero {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 20px;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 span {
@@ -61,23 +70,28 @@ span {
 #title {
     display: block;
     color: #181a29;
+    text-decoration: underline;
 }
-h1, h2 {
+h2 {
     text-align: center;
 }
 #content {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
 
 #socials {
     margin-top: 10px;
+    margin-left: 5px;
     text-align: center;
+    width: 180px; 
+    /* border: 1px solid black; */
 }
 .fa {
-    padding: 10px;
-    width: 50px;
+    padding: 10px 5px;
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid dodgerblue;
     text-align: center;
     text-decoration: none;
     color: black;
@@ -90,4 +104,42 @@ h1, h2 {
 #surprise {
     color: inherit;
     text-decoration: inherit;
+}
+
+#grid {
+    display: grid;
+    /* grid-template-rows: 1fr 5fr 1fr; */
+    grid-template-columns: 1fr 2fr; 
+}
+.grid-span {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+@media only screen and (max-width: 750px) {
+    #grid {
+        display: block;
+        /* grid-template-columns: 1fr; */
+    }
+}
+
+#info-card {
+    text-align: left;
+}
+
+#builds-div, #reads-div {
+    display: none;
+}
+
+#info-card-div {
+    border: 1px solid black;
+    width: 180px;
+    padding: 0px 50px 20px 50px;
+    border-radius: 15px;
+}
+
+#right-div {
+    margin-left: 5%;
+}
+#right-div p {
+    font-size: 18px;
 }

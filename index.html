@@ -4,85 +4,147 @@
     <title>Maxine Wu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
+
 <body>
     <div id="content">
+        <div id="grid">
 
-        <nav>
+        <div class="grid-span">
+          <nav>
             <ul>
-                <li><a href="#title">~about~</a></li>
-                <li><a href="#builds">~builds~</a></li>
-                <li><a href="#reads">~reads~</a></li>
+                <li><p id="menu-about" onclick="goToAbout()" href="#title">>about</p></li>
+                <li><p id="menu-builds" onclick="goToBuilds()" href="#builds">>builds</p></li>
+                <li><p id="menu-reads" onclick="goToReads()" href="#reads">>reads</p></li>
             </ul>
-        </nav>
-
-        <h1 id="title">M A X I N E : W U </h1>
-
-        <img id="hero" src="./media/totoro-gif.gif" height="180px">
-
-        <div id="socials">
-            <a href="https://github.com/maxinewu5" class="fa fa-github" target="_blank" rel="noopener noreferrer"></a>
-            <a href="https://www.linkedin.com/in/maxine-wu-5b6076197/" class="fa fa-linkedin-square" target="_blank" rel="noopener noreferrer"></a>
-            <a href="https://drive.google.com/file/d/1ui437CW-cRREirmo-yzF3InoXEmSXI1v/view?usp=sharing" class="fa fa-folder" target="_blank" rel="noopener noreferrer"></a>
+          </nav>
         </div>
 
-        <hr>
-        <p>Hi, I'm Maxine Wu :-) I am a first year Computer Engineering undergraduate at <span class="blue">UCLA</span>. 
+        <div id="info-card">
+          <div id="info-card-div">
+            <h1 id="title">MAXINE WU </h1>
+            <img id="hero" src="media/Wu_Maxine.jpg" height="180px"> 
+  
+            <p>Computer Eng. @ UCLA. </p>
+            <!-- <p>Learning & teaching </p> -->
+  
+            <div id="socials">
+                <a href="https://github.com/maxinewu5" class="fa fa-github" target="_blank" rel="noopener noreferrer"></a>
+                <a href="https://www.linkedin.com/in/maxine-wu-5b6076197/" class="fa fa-linkedin-square" target="_blank" rel="noopener noreferrer"></a>
+                <a href="https://drive.google.com/file/d/1ui437CW-cRREirmo-yzF3InoXEmSXI1v/view?usp=sharing" class="fa fa-folder" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="right-div">
+          <div id="about-div" class="right-div">
+          <p>Hi, I'm Maxine Wu :-) I am a first year Computer Engineering undergraduate at <span class="blue">UCLA</span>. 
+            I'm interested in <span class="blue">autonomous vehicles</span> and <span class="blue">computer vision</span>. 
+            I'm passionate about teaching others and developing ethical technology. 
+            
+            <br> <br>
+
             I'm currently a student researcher with <a href="https://elfin.igpp.ucla.edu/"><span class="blue">ELFIN CubeSat</span></a>, where
             I develop software for the guidance, navigation, and control (GNC) subsystems for our NASA-funded cube satellite mission. 
             
             <br> <br>
 
-            I'm proficient in C++, Python, Java, and Javascript. I have previous experience doing data analysis and embedded systems projects, and I've 
-            also done some web development personal projects on the side.
+            In my free time, I like reading, hiking, gaming, and making stuff! Check out some of the stuff I've been working on below:) as well 
+            as any of the other random stuff going on in my life here. 
 
             <br> <br>
 
-            My current interests include <span class="blue">autonomous vehicles</span> and <span class="blue">computer vision</span>. 
-            I am currently open for opportunities in research as well as SWE internships around the SF/LA area. 
-        </p>
-        <p>Come chat with me at <b>maxinewu [at] ucla [dot] edu</b>.</p>
-        <hr>
-        <h2 id="builds">B U I L D S</h2>
-        <ul id="buidlist">
-            <li>
-                <a href="https://github.com/maxinewu5/paper-planes" target="_blank" rel="noopener noreferrer">Paper Planes</a>
-                <br>
+            PS. I am currently searching for software internships around the SF/LA area. 
+            Come find me at <b>maxinewu [at] g [dot] ucla [dot] edu</b>.
+          </p>
 
-                <img src="media/paper-planes-snapshot.png" width="500px">
-                <p><i>(Above: Screenshot from the home page of the web app)</i></p>
+          <!-- <h3>Currently...</h3>
+          <ul>
+            <li>Do events with ACM AI</li>
+            <li>Play music for GME</li>
+          </ul> -->
 
-                <ul>
-                    <li>Built with Mongo DB and Node.js, previously hosted with Heroku</li>
-                    <li>Social experiment, inspired by Lauv's Blue Thoughts project</li>
-                    <li>Web app that allows people to share their thoughts and "send" them off virtually like paper planes as well as 
-                         other people to "pick" them up and find them</li>
-                </ul>
-            </li>
-            </li>
-            <li>
-                <a href="" target="_blank" rel="noopener noreferrer">Analyzing Atlanta</a>
-                <br>
-                <img src="media/news-analysis-snapshot.png" width="500px">
-                <p><i>(Above: Example word clouds generated during the data exploration stage)</i></p>
-                <ul>
-                    <li>Built with Python (pandas, matplotlib, sklearn, gensim, etc)</li>
-                    <li>Explores American news source coverage with using natural language processing tools such as sentiment analysis and topic generation</li>
-                    <li>Examines how a singular topic can be approached from many different angles</li>
-                </ul>
-            </li>
-        </ul>
-        <hr>
-        <h2 id="reads">R E A D S</h2>
-        <p>In my free time, I like reading. Here's some titles that I enjoyed recently. </p>
-        <ul>
-            <li><i>Bone</i> by Fae Myenne Ng</li>
-            <li><i>The Midnight Library</i> by Matt Haig</li>
-            <li><i>Behind Rebel Lines</i> by Seymour Reit</li>
-            <li><i>Atomic Habits</i> by James Clear</li>
-        </ul>
-        <hr>
-        <p>Wow! You've scrolled so far! It was nice getting to know you :-)</p>
+          </div>
+          
+          <div id="builds-div" class="right-div">
+
+          <h2 id="builds">B U I L D S</h2>
+          <ul id="buidlist">
+              <li>
+                  <a href="https://github.com/maxinewu5/paper-planes" target="_blank" rel="noopener noreferrer">Paper Planes</a>
+                  <br>
+
+                  <img src="media/paper-planes-snapshot.png" width="500px">
+                  <p><i>(Above: Screenshot from the home page of the web app)</i></p>
+
+                  <ul>
+                      <li>Built with Mongo DB and Node.js, previously hosted with Heroku</li>
+                      <li>Social experiment, inspired by Lauv's Blue Thoughts project</li>
+                      <li>Web app that allows people to share their thoughts and "send" them off virtually like paper planes as well as 
+                          other people to "pick" them up and find them</li>
+                  </ul>
+              </li>
+              </li>
+              <li>
+                  <a href="" target="_blank" rel="noopener noreferrer">Analyzing Atlanta</a>
+                  <br>
+                  <img src="media/news-analysis-snapshot.png" width="500px">
+                  <p><i>(Above: Example word clouds generated during the data exploration stage)</i></p>
+                  <ul>
+                      <li>Built with Python (pandas, matplotlib, sklearn, gensim, etc)</li>
+                      <li>Explores American news source coverage with using natural language processing tools such as sentiment analysis and topic generation</li>
+                      <li>Examines how a singular topic can be approached from many different angles</li>
+                  </ul>
+              </li>
+          </ul>
+
+          </div>
+
+          <div id="reads-div" class="right-div">
+            <h2 id="reads">R E A D S</h2>
+            <p>In my free time, I like reading. Here's some titles that I enjoyed recently. </p>
+            <ul>
+                <li><i>Bone</i> by Fae Myenne Ng</li>
+                <li><i>The Midnight Library</i> by Matt Haig</li>
+                <li><i>Behind Rebel Lines</i> by Seymour Reit</li>
+                <li><i>Atomic Habits</i> by James Clear</li>
+            </ul>
+                      
+          </div>
+
+        </div>
+
+        <!-- <div class="grid-span">
+          <hr>
+          <p>Designed and built by Maxine Wu. </p>
+        </div> -->
+      </div>
     </div>
+
+    <script>
+      function goToAbout(){ 
+        let divElements = document.getElementsByClassName("right-div");
+        for (var i = 0, max = divElements.length; i < max; i++) {
+            divElements[i].style.display = "none";
+        }
+        document.getElementById("about-div").style.display = "block";
+      }
+      function goToBuilds(){ 
+        let divElements = document.getElementsByClassName("right-div");
+        for (var i = 0, max = divElements.length; i < max; i++) {
+            divElements[i].style.display = "none";
+        }
+        document.getElementById("builds-div").style.display = "block";
+      }
+      function goToReads(){ 
+        let divElements = document.getElementsByClassName("right-div");
+        for (var i = 0, max = divElements.length; i < max; i++) {
+            divElements[i].style.display = "none";
+        }
+        document.getElementById("reads-div").style.display = "block";
+      }
+    </script>
+
 </body>
 </html>
