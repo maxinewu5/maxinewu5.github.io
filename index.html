@@ -4,6 +4,7 @@
     <title>Maxine Wu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -11,7 +12,7 @@
     <div id="content">
         <div id="grid">
 
-        <div class="grid-span">
+        <!-- <div class="grid-span">
           <nav>
             <ul>
                 <li><p id="menu-about" onclick="goToAbout()" href="#title">>about</p></li>
@@ -19,26 +20,40 @@
                 <li><p id="menu-reads" onclick="goToReads()" href="#reads">>reads</p></li>
             </ul>
           </nav>
-        </div>
+        </div> -->
 
         <div id="info-card">
           <div id="info-card-div">
-            <h1 id="title">MAXINE WU </h1>
-            <img id="hero" src="media/Wu_Maxine.jpg" height="180px"> 
+            <h1 id="title"><b><a href="#">MAXINE WU.</a></b> </h1>
+            <img id="hero" src="media/Wu_Maxine.jpg" height="180"> 
   
             <p>Computer Eng. @ UCLA. </p>
             <!-- <p>Learning & teaching </p> -->
   
             <div id="socials">
-                <a href="https://github.com/maxinewu5" class="fa fa-github" target="_blank" rel="noopener noreferrer"></a>
-                <a href="https://www.linkedin.com/in/maxine-wu-5b6076197/" class="fa fa-linkedin-square" target="_blank" rel="noopener noreferrer"></a>
-                <a href="https://drive.google.com/file/d/1ui437CW-cRREirmo-yzF3InoXEmSXI1v/view?usp=sharing" class="fa fa-folder" target="_blank" rel="noopener noreferrer"></a>
+                <a href="https://github.com/maxinewu5" class="fa fa-github fa-2x" target="_blank" rel="noopener noreferrer"></a>
+                <a href="https://www.linkedin.com/in/maxine-wu-5b6076197/" class="fa fa-linkedin-square fa-2x" target="_blank" rel="noopener noreferrer"></a>
+                <a href="https://drive.google.com/file/d/1ui437CW-cRREirmo-yzF3InoXEmSXI1v/view?usp=sharing" class="fa fa-folder fa-2x" target="_blank" rel="noopener noreferrer"></a>
+                <br><br>
+                <hr>
+              </div>
+
+            <div class="grid-span">
+              <nav>
+                <ul>
+                    <li><a id="menu-about" onclick="goToAbout()" href="#">>about</a></li>
+                    <li><a id="menu-builds" onclick="goToBuilds()" href="#builds">>projects</a></li>
+                    <li><a id="menu-reads" onclick="goToReads()" href="#reads">>reads</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
 
+
         <div id="right-div">
           <div id="about-div" class="right-div">
+            <h2>about me</h2>
           <p>Hi, I'm Maxine Wu :-) I am a first year Computer Engineering undergraduate at <span class="blue">UCLA</span>. 
             I'm interested in <span class="blue">autonomous vehicles</span> and <span class="blue">computer vision</span>. 
             I'm passionate about teaching others and developing ethical technology. 
@@ -56,8 +71,10 @@
             <br> <br>
 
             PS. I am currently searching for software internships around the SF/LA area. 
-            Come find me at <b>maxinewu [at] g [dot] ucla [dot] edu</b>.
+            Come find me at <b> maxinewu [at] g [dot] ucla [dot] edu </b>.
+          
           </p>
+
 
           <!-- <h3>Currently...</h3>
           <ul>
@@ -69,7 +86,7 @@
           
           <div id="builds-div" class="right-div">
 
-          <h2 id="builds">B U I L D S</h2>
+          <h2 id="builds">projects</h2>
           <ul id="buidlist">
               <li>
                   <a href="https://github.com/maxinewu5/paper-planes" target="_blank" rel="noopener noreferrer">Paper Planes</a>
@@ -102,7 +119,7 @@
           </div>
 
           <div id="reads-div" class="right-div">
-            <h2 id="reads">R E A D S</h2>
+            <h2 id="reads">reads</h2>
             <p>In my free time, I like reading. Here's some titles that I enjoyed recently. </p>
             <ul>
                 <li><i>Bone</i> by Fae Myenne Ng</li>
@@ -123,27 +140,27 @@
     </div>
 
     <script>
-      function goToAbout(){ 
-        let divElements = document.getElementsByClassName("right-div");
-        for (var i = 0, max = divElements.length; i < max; i++) {
-            divElements[i].style.display = "none";
-        }
-        document.getElementById("about-div").style.display = "block";
-      }
-      function goToBuilds(){ 
-        let divElements = document.getElementsByClassName("right-div");
-        for (var i = 0, max = divElements.length; i < max; i++) {
-            divElements[i].style.display = "none";
-        }
-        document.getElementById("builds-div").style.display = "block";
-      }
-      function goToReads(){ 
-        let divElements = document.getElementsByClassName("right-div");
-        for (var i = 0, max = divElements.length; i < max; i++) {
-            divElements[i].style.display = "none";
-        }
-        document.getElementById("reads-div").style.display = "block";
-      }
+      // function goToAbout(){ 
+      //   let divElements = document.getElementsByClassName("right-div");
+      //   for (var i = 0, max = divElements.length; i < max; i++) {
+      //       divElements[i].style.display = "none";
+      //   }
+      //   document.getElementById("about-div").style.display = "block";
+      // }
+      // function goToBuilds(){ 
+      //   let divElements = document.getElementsByClassName("right-div");
+      //   for (var i = 0, max = divElements.length; i < max; i++) {
+      //       divElements[i].style.display = "none";
+      //   }
+      //   document.getElementById("builds-div").style.display = "block";
+      // }
+      // function goToReads(){ 
+      //   let divElements = document.getElementsByClassName("right-div");
+      //   for (var i = 0, max = divElements.length; i < max; i++) {
+      //       divElements[i].style.display = "none";
+      //   }
+      //   document.getElementById("reads-div").style.display = "block";
+      // }
     </script>
 
 </body>
