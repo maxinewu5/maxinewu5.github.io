@@ -10,35 +10,21 @@
 
 <body>
     <div id="content">
-        <div id="grid">
-
-        <!-- <div class="grid-span">
-          <nav>
-            <ul>
-                <li><p id="menu-about" onclick="goToAbout()" href="#title">>about</p></li>
-                <li><p id="menu-builds" onclick="goToBuilds()" href="#builds">>builds</p></li>
-                <li><p id="menu-reads" onclick="goToReads()" href="#reads">>reads</p></li>
-            </ul>
-          </nav>
-        </div> -->
-
-        <div id="info-card">
+        <div id="container">
+        <div id="left-column">
           <div id="info-card-div">
-            <h1 id="title"><b><a href="#">MAXINE WU.</a></b> </h1>
-            <img id="hero" src="media/IMG_8518.jpg" height="180"> 
-  
-            <p>Computer Eng. @ UCLA. </p>
-            <!-- <p>Learning & teaching </p> -->
+            <h1 id="title"><b><a href="#">maxine wu :) </a></b> </h1>
+            <img id="hero" src="media/max_aca_headshot.jpg" height="250px"> 
+            <p><i>incoming swe intern @ anduril</i></p>
   
             <div id="socials">
                 <a href="https://github.com/maxinewu5" class="fa fa-github fa-2x" target="_blank" rel="noopener noreferrer"></a>
                 <a href="https://www.linkedin.com/in/maxine-wu-5b6076197/" class="fa fa-linkedin-square fa-2x" target="_blank" rel="noopener noreferrer"></a>
                 <a href="https://drive.google.com/file/d/1ui437CW-cRREirmo-yzF3InoXEmSXI1v/view?usp=sharing" class="fa fa-folder fa-2x" target="_blank" rel="noopener noreferrer"></a>
                 <br><br>
-                <hr>
-              </div>
+            </div>
 
-            <div class="grid-span">
+            <!-- <div class="grid-span">
               <nav>
                 <ul>
                     <li><a id="menu-about" onclick="goToAbout()" href="#">>about</a></li>
@@ -46,45 +32,44 @@
                     <li><a id="menu-reads" onclick="goToReads()" href="#reads">>reads</a></li>
                 </ul>
               </nav>
-            </div>
+            </div> -->
           </div>
         </div>
 
 
-        <div id="right-div">
-          <div id="about-div" class="right-div">
-            <h2>about me</h2>
-          <p>Hi, I'm Maxine Wu :-) I am a first year Computer Engineering undergraduate at <span class="blue">UCLA</span>. 
-            I'm interested in <span class="blue">autonomous vehicles</span> and <span class="blue">computer vision</span>. 
-            I'm passionate about teaching others and developing ethical technology. 
+        <div id="right-column">
+          <div class="right-div">
+          <div id="about-div" class="right-div"> 
+            <!-- <h2>about me</h2> -->
+            <br>
+          <p>Hi y'all, I'm Maxine (she/her)! I'm a second year undergrad at <span class="blue">UCLA</span>, 
+            studying Computer Science with a minor in Mathematics. Currently, I work with 
+            <a href="https://elfin.igpp.ucla.edu/"><span class="blue">ELFIN CubeSat</span></a>, 
+            developing flight software and simulation software for the Attitude Determination 
+            & Control (ADCS) subsystem for 6U+ cube satellite mission. 
+            I've also been working on a quarter-long research project 
+            with the <span class="blue">Visual Machines Group</span> exploring 3D rendering wih Gaussian Splatting. 
+
+            <br><br>
+
+            I'm interested in building software that informs physical systems, ie. vision/perception, 
+            3D modeling, embodied AI. I also think algorithms are neat. 
+
+            <br><br>
             
-            <br> <br>
-
-            I'm currently a student researcher with <a href="https://elfin.igpp.ucla.edu/"><span class="blue">ELFIN CubeSat</span></a>, where
-            I develop software for the guidance, navigation, and control (GNC) subsystems for our NASA-funded cube satellite mission. 
-            
-            <br> <br>
-
-            In my free time, I like reading, hiking, gaming, and making stuff! Check out some of the stuff I've been working on below:) as well 
-            as any of the other random stuff going on in my life here. 
+            On campus, I serve as <span class="blue">Co-President of ACM AI</span>, UCLA's largest 
+            community of AI-enthusiasts making AI accessible for all. I also sing and arrange for Cadenza A capella. 
+            I'm passionate about equitable and accessible education in STEM and music.
 
             <br> <br>
 
-            PS. I am currently searching for software internships around the SF/LA area. 
-            Come find me at <b> maxinewu [at] g [dot] ucla [dot] edu </b>.
+            Want to talk? Say hello at <b> maxinewu [at] g [dot] ucla [dot] edu </b>
           
           </p>
 
-
-          <!-- <h3>Currently...</h3>
-          <ul>
-            <li>Do events with ACM AI</li>
-            <li>Play music for GME</li>
-          </ul> -->
-
           </div>
           
-          <div id="builds-div" class="right-div">
+          <!-- <div id="builds-div" class="right-div">
 
           <h2 id="builds">projects</h2>
           <ul id="buidlist">
@@ -92,11 +77,11 @@
                   <a href="https://github.com/maxinewu5/paper-planes" target="_blank" rel="noopener noreferrer">Paper Planes</a>
                   <br>
 
-                  <img src="media/paper-planes-snapshot.png" width="500px">
+                  <img src="media/paper-planes-snapshot.png" width="100px">
                   <p><i>(Above: Screenshot from the home page of the web app)</i></p>
 
                   <ul>
-                      <li>Built with Mongo DB and Node.js, previously hosted with Heroku</li>
+                      <li>Technologies: Mongo DB, Node.js</li>
                       <li>Social experiment, inspired by Lauv's Blue Thoughts project</li>
                       <li>Web app that allows people to share their thoughts and "send" them off virtually like paper planes as well as 
                           other people to "pick" them up and find them</li>
@@ -106,7 +91,7 @@
               <li>
                   <a href="" target="_blank" rel="noopener noreferrer">Analyzing Atlanta</a>
                   <br>
-                  <img src="media/news-analysis-snapshot.png" width="500px">
+                  <img src="media/news-analysis-snapshot.png" width="100px">
                   <p><i>(Above: Example word clouds generated during the data exploration stage)</i></p>
                   <ul>
                       <li>Built with Python (pandas, matplotlib, sklearn, gensim, etc)</li>
@@ -116,52 +101,29 @@
               </li>
           </ul>
 
-          </div>
+          </div> -->
 
           <div id="reads-div" class="right-div">
-            <h2 id="reads">reads</h2>
-            <p>In my free time, I like reading. Here's some titles that I enjoyed recently. </p>
-            <ul>
+            <h2 id="reads">favs <3</h2>
+            <p><b>reads: </b><i>Bone</i> by Fae Myenne Ng, <i>The Midnight Library</i> by Matt Haig, 
+            <i>Behind Rebel Lines</i> by Seymour Reit, <i>Atomic Habits</i> by James Clear </p>
+            <p><b>movies: </b><i>Everything Everywhere All At Once</i>, <i>Dune: Part Two</i>, 
+            <i>Oppenheimer</i>, <i>Boy and The Heron</i>, <i>Thor: Ragnarok</i>
+            <p><b>songs:</b> <i>Dreamer</i> by Laufey, <i>Backburner</i> by NIKI, <i>Daylight</i> by Taylor Swift
+            <!-- <ul>
                 <li><i>Bone</i> by Fae Myenne Ng</li>
                 <li><i>The Midnight Library</i> by Matt Haig</li>
                 <li><i>Behind Rebel Lines</i> by Seymour Reit</li>
                 <li><i>Atomic Habits</i> by James Clear</li>
-            </ul>
+            </ul> -->
+                    
+          </div>
                       
           </div>
 
         </div>
-
-        <!-- <div class="grid-span">
-          <hr>
-          <p>Designed and built by Maxine Wu. </p>
-        </div> -->
       </div>
     </div>
-
-    <script>
-      // function goToAbout(){ 
-      //   let divElements = document.getElementsByClassName("right-div");
-      //   for (var i = 0, max = divElements.length; i < max; i++) {
-      //       divElements[i].style.display = "none";
-      //   }
-      //   document.getElementById("about-div").style.display = "block";
-      // }
-      // function goToBuilds(){ 
-      //   let divElements = document.getElementsByClassName("right-div");
-      //   for (var i = 0, max = divElements.length; i < max; i++) {
-      //       divElements[i].style.display = "none";
-      //   }
-      //   document.getElementById("builds-div").style.display = "block";
-      // }
-      // function goToReads(){ 
-      //   let divElements = document.getElementsByClassName("right-div");
-      //   for (var i = 0, max = divElements.length; i < max; i++) {
-      //       divElements[i].style.display = "none";
-      //   }
-      //   document.getElementById("reads-div").style.display = "block";
-      // }
-    </script>
 
 </body>
 </html>
