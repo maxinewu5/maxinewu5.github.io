@@ -10,120 +10,89 @@
 
 <body>
     <div id="content">
+        <div id="nav-bar-div">
+          <nav class="navbar">
+              <ul class="nav-list">
+                  <li class="nav-item"><a href="index.html">home</a></li>
+                  <!-- <li class="nav-item"><a href="#about">about</a></li> -->
+                  <li class="nav-item"><a href="research.html">research</a></li>
+                  <!-- <li class="nav-item"><a href="blog.html">blog</a></li> -->
+              </ul>
+          </nav>
+        </div>
         <div id="container">
         <div id="left-column">
           <div id="info-card-div">
-            <h1 id="title"><b><a href="#">maxine wu :) </a></b> </h1>
-            <img id="hero" src="media/max_aca_headshot.jpg" height="250px"> 
-            <p><i>incoming swe intern @ anduril</i></p>
+            <h1 id="title"><b>maxine wu</a></b> </h1>
+            <p id="pronouns"><i>(she/her)</i></p>
+            <img id="hero" src="media/max_aca_headshot_v4.jpg" height="250px"> 
   
             <div id="socials">
                 <a href="https://github.com/maxinewu5" class="fa fa-github fa-2x" target="_blank" rel="noopener noreferrer"></a>
                 <a href="https://www.linkedin.com/in/maxine-wu-5b6076197/" class="fa fa-linkedin-square fa-2x" target="_blank" rel="noopener noreferrer"></a>
-                <a href="https://drive.google.com/file/d/1ui437CW-cRREirmo-yzF3InoXEmSXI1v/view?usp=sharing" class="fa fa-folder fa-2x" target="_blank" rel="noopener noreferrer"></a>
+                <a href="https://drive.google.com/file/d/1ui437CW-cRREirmo-yzF3InoXEmSXI1v/preview" class="fa fa-folder fa-2x" target="_blank" rel="noopener noreferrer"></a>
                 <br><br>
             </div>
-
-            <!-- <div class="grid-span">
-              <nav>
-                <ul>
-                    <li><a id="menu-about" onclick="goToAbout()" href="#">>about</a></li>
-                    <li><a id="menu-builds" onclick="goToBuilds()" href="#builds">>projects</a></li>
-                    <li><a id="menu-reads" onclick="goToReads()" href="#reads">>reads</a></li>
-                </ul>
-              </nav>
-            </div> -->
           </div>
         </div>
 
+        <div class="cloud">
+        </div>
 
         <div id="right-column">
           <div class="right-div">
           <div id="about-div" class="right-div"> 
-            <!-- <h2>about me</h2> -->
-            <br>
-          <p>Hi y'all, I'm Maxine (she/her)! I'm a second year undergrad at <span class="blue">UCLA</span>, 
-            studying Computer Science with a minor in Mathematics. Currently, I work with 
-            <a href="https://elfin.igpp.ucla.edu/"><span class="blue">ELFIN CubeSat</span></a>, 
-            developing flight software and simulation software for the Attitude Determination 
-            & Control (ADCS) subsystem for cube satellites. 
-            I've also been working on a quarter-long research project 
-            with the <span class="blue">Visual Machines Group</span> exploring 3D rendering with Gaussian Splatting. 
-
+            Hi y'all, I'm Maxine! I'm a third year computer science undergraduate at <span class="blue">UCLA</span>, 
+            intended minor in Musicology. My interests are in building software that informs physical 
+            systems. I'm passionate about equitable and accessible CS/AI education, 
+            and I like to hike and make music in my free time.
             <br><br>
-
-            I'm interested in building software that informs physical systems, ie. vision/perception, 
-            3D modeling, embodied AI. I also think algorithms are neat. 
-
-            <br><br>
-            
-            On campus, I serve as <span class="blue">Co-President of ACM AI</span>, UCLA's largest 
-            community of AI-enthusiasts making AI accessible for all. I also sing and arrange for Cadenza A capella. 
-            I'm passionate about equitable and accessible education in STEM and music.
-
-            <br> <br>
-
-            Want to talk? Say hello at <b> maxinewu [at] g [dot] ucla [dot] edu </b>
-          
-          </p>
-
+            Currently, I'm...
+            <ul>
+              <li>
+                Engineering software at <a href="https://elfin.igpp.ucla.edu/">ELFIN</a> on their controls flight software
+              </li>
+              <li>
+                Researching applications of vision-language models to real world agents
+              </li>
+              <li>
+                Serving as Co-President of <a href="https://www.uclaacm.com/">ACM AI</a>, UCLA's largest AI-centered community
+              </li>
+            </ul>
+            Recently, I...
+            <ul>
+              <li>
+                Interned at <a href="https://www.anduril.com/">Anduril</a> this past summer on their Air Defense team 
+              </li>
+              <li>
+                Worked on controllable and memory-augmented video-generation 
+              </li>
+            </ul>
+            Always down to chat — say hi at maxinewu [at] g [dot] ucla [dot] edu
           </div>
           
-          <!-- <div id="builds-div" class="right-div">
-
-          <h2 id="builds">projects</h2>
-          <ul id="buidlist">
-              <li>
-                  <a href="https://github.com/maxinewu5/paper-planes" target="_blank" rel="noopener noreferrer">Paper Planes</a>
-                  <br>
-
-                  <img src="media/paper-planes-snapshot.png" width="100px">
-                  <p><i>(Above: Screenshot from the home page of the web app)</i></p>
-
-                  <ul>
-                      <li>Technologies: Mongo DB, Node.js</li>
-                      <li>Social experiment, inspired by Lauv's Blue Thoughts project</li>
-                      <li>Web app that allows people to share their thoughts and "send" them off virtually like paper planes as well as 
-                          other people to "pick" them up and find them</li>
-                  </ul>
-              </li>
-              </li>
-              <li>
-                  <a href="" target="_blank" rel="noopener noreferrer">Analyzing Atlanta</a>
-                  <br>
-                  <img src="media/news-analysis-snapshot.png" width="100px">
-                  <p><i>(Above: Example word clouds generated during the data exploration stage)</i></p>
-                  <ul>
-                      <li>Built with Python (pandas, matplotlib, sklearn, gensim, etc)</li>
-                      <li>Explores American news source coverage with using natural language processing tools such as sentiment analysis and topic generation</li>
-                      <li>Examines how a singular topic can be approached from many different angles</li>
-                  </ul>
-              </li>
-          </ul>
-
-          </div> -->
+          <br>
+          <hr>
 
           <div id="reads-div" class="right-div">
-            <h2 id="reads">favs <3</h2>
-            <p><b>reads: </b><i>Bone</i> by Fae Myenne Ng, <i>The Midnight Library</i> by Matt Haig, 
-            <i>Behind Rebel Lines</i> by Seymour Reit, <i>Atomic Habits</i> by James Clear </p>
-            <p><b>movies: </b><i>Everything Everywhere All At Once</i>, <i>Dune: Part Two</i>, 
-            <i>Oppenheimer</i>, <i>Boy and The Heron</i>, <i>Thor: Ragnarok</i>
-            <p><b>songs:</b> <i>Dreamer</i> by Laufey, <i>Backburner</i> by NIKI, <i>Daylight</i> by Taylor Swift
-            <!-- <ul>
-                <li><i>Bone</i> by Fae Myenne Ng</li>
-                <li><i>The Midnight Library</i> by Matt Haig</li>
-                <li><i>Behind Rebel Lines</i> by Seymour Reit</li>
-                <li><i>Atomic Habits</i> by James Clear</li>
-            </ul> -->
-                    
+            <h3 id="reads">some favs <3</h3>
+            <ul>
+              <li>
+                <u>movies:</u> Everything Everywhere All At Once, Dune & Dune: Part Two, Oppenheimer, Inside Out 2, Top Gun: Maverick, Thor: Ragnarok, La La Land, Whiplash
+              </li>   
+              <li>
+                <u>reads:</u> Bone by Fae Myenne Ng, The Midnight Library by Matt Haig, Behind Rebel Lines by Seymour Reit, Atomic Habits by James Clear
+              </li>     
+              <li>
+                <u>albums:</u> Lover (Taylor Swift), emails i can't send (Sabrina Carpenter), Nicole (NIKI), Bewitched (Laufey), The Secret of Us (Gracie Abrams), American Idiot (Green Day), Stick Season (Noah Kahan)
+              </li>
+            </ul>
           </div>
-                      
           </div>
-
         </div>
       </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
